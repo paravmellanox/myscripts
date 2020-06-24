@@ -8,7 +8,6 @@
 COUNT=255
 DEV=$2
 function dev_up_down() {
-        echo "dev up/down"
         for (( c=1; c<=$COUNT; c++ ))
         do
                 ip link set $DEV up
@@ -17,7 +16,6 @@ function dev_up_down() {
 }
 
 function carrier_up_down() {
-        echo "carrier up/down"
         for (( c=1; c<=$COUNT; c++ ))
         do
                 ip link set $DEV carrier on
